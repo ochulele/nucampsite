@@ -1,9 +1,9 @@
 import {Col, Row} from 'reactstrap';
 import CampsiteCard from "./CampsiteCard";
-import { SelectAllCampsites } from './campsitesSlice';
+import { selectAllCampsites } from './campsitesSlice';
 
 const CampsitesList = () => {
-    const campsites = SelectAllCampsites();
+    const campsites = selectAllCampsites();
 
     return (
         <Row className='ms-auto'>
